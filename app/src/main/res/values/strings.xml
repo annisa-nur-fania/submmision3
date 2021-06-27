@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Submission2Annisa</string>
+    <string name="photoavatar">Avatar</string>
+    <string name="username">Username</string>
+    <string name="nameavatar">Name</string>
+    <string name="location">Location</string>
+    <string name="company">Company</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="repository">Repository</string>
+
+
+    <string name="pengingat">Reminder at 9:00 AM</string>
+    <string name="pengaturan">Setting Language</string>
+    <string name="key">Reminder</string>
+    <string name="setting">setting</string>
+    <string name="statusreminder">Status Reminder</string>
+    <string name="delete_user">User item deleted favorites</string>
+
+    <string name="change_language_settings">Pilih Bahasa</string>
+    <string name="search">search</string>
+    <string name="search_hint">Masukkan kata</string>
+    <string name="action_fav">list favorite</string>
+    <string name="delete_favorite">delete favorite</string>
+    <string name="add_fav">fafvorit ditambahkan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

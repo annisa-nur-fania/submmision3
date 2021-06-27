@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dicoding.picodiploma.submission2annisa">
+
+
+    <permission
+        android:name="com.dicoding.picodiploma.submission2annisa.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.dicoding.picodiploma.submission2annisa.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Submission2Annisa"
+        android:usesCleartextTraffic="true">
+
+        <provider
+            android:name=".Favorite.FavoriteProvider"
+            android:authorities="com.dicoding.picodiploma.submission2annisa"
+            android:exported="true"
+            android:enabled="true"
+            android:readPermission="com.dicoding.picodiploma.submission2annisa.READ_DATABASE"
+            android:writePermission="com.dicoding.picodiploma.submission2annisa.WRITE_DATABASE" />
+
+        <receiver
+            android:name=".Option.AlarmReminder"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Option.SettingActivity"></activity>
+        <activity android:name=".Favorite.AvatarFavActivity"></activity>
+        <activity android:name=".Favorite.FavDetailActivity"></activity>
+        <activity android:name=".AvatarDetail"></activity>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
